@@ -31,10 +31,14 @@ clean:
 	@echo "Cleaning up..."
 	rm -rf $(BUILD_DIR)
 
-# Run the application
+# Run the application with arguments
 run:
 	@echo "Running the application..."
-	go run main.go
+	go run main.go $(filter-out $@,$(MAKECMDGOALS))
+
+# Prevent make from interpreting the arguments as Makefile targets
+%:
+	@:
 
 # Print help
 help:
