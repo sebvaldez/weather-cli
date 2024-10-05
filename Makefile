@@ -21,10 +21,10 @@ build-all:
 	# GOOS=linux GOARCH=arm64 go build -o $(BUILD_DIR)/$(BINARY_NAME)-linux-arm64 .
 	# GOOS=windows GOARCH=amd64 go build -o $(BUILD_DIR)/$(BINARY_NAME)-windows-amd64.exe .
 
-# Run tests
-test:
+# Run tests with colorized output using gotestsum
+test-internals:
 	@echo "Running tests..."
-	go test -v ./...
+	go run gotest.tools/gotestsum --format testname -- ./internal/...
 
 # Clean up generated files
 clean:
