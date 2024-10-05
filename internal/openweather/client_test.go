@@ -131,5 +131,4 @@ func TestClient_Get(t *testing.T) {
 	if weather.Daily[0].Summary != "Expect a day of partly cloudy with rain" {
 		t.Errorf("Expected summary 'Expect a day of partly cloudy with rain', got %s", weather.Daily[0].Summary)
 	}
-
 }
