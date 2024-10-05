@@ -57,3 +57,6 @@ bin/
 # Exclude go.mod and go.sum (should be committed)
 !go.mod
 !go.sum
+
+# Exclude my todo nots
+todos.md
