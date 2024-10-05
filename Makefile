@@ -33,7 +33,6 @@ clean:
 
 # Run the application with arguments
 run:
-	@echo "Running the application..."
 	go run main.go $(filter-out $@,$(MAKECMDGOALS))
 
 # Prevent make from interpreting the arguments as Makefile targets
