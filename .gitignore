@@ -1,0 +1,59 @@
+# Binaries for programs and plugins
+bin/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Build directories
+/build/
+release/
+
+# Output of the go coverage tool
+*.out
+coverage.out
+
+# Test binaries
+*.test
+
+# Vendor directory (comment out if you commit your vendor directory)
+vendor/
+
+# IDE/editor directories and files
+.idea/
+.vscode/
+*.swp
+*~
+*.swo
+*.tmp
+*.log
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+
+# Environment variable files
+.env
+
+# Makefile artifacts (if any)
+build/
+
+# Go race detector output
+race*.txt
+
+# Coverage profiles
+profile.cov
+
+# Other
+*.orig
+*.old
+
+# Ignore the bin directory created by the Makefile
+bin/
+
+# Exclude go.mod and go.sum (should be committed)
+!go.mod
+!go.sum
